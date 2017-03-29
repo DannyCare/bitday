@@ -1,0 +1,52 @@
+      ____    ______  ______  ____    ______   __    __ 
+     /\  _`\ /\__  _\/\__  _\/\  _`\ /\  _  \ /\ \  /\ \
+     \ \ \L\ \/_/\ \/\/_/\ \/\ \ \/\ \ \ \L\ \\ `\`\\/'/
+      \ \  _ <' \ \ \   \ \ \ \ \ \ \ \ \  __ \`\ `\ /' 
+       \ \ \L\ \ \_\ \__ \ \ \ \ \ \_\ \ \ \/\ \ `\ \ \ 
+        \ \____/ /\_____\ \ \_\ \ \____/\ \_\ \_\  \ \_\
+         \/___/  \/_____/  \/_/  \/___/  \/_/\/_/   \/_/
+   
+                         Version 1.0 :-)
+                         
+                          www.bitday.me
+                         
+                  Compiled by BloodyMarvellous
+                www.reddit.com/u/BloodyMarvellous
+
+		   www.reddit.com/r/BitDay
+
+           v1.0 Reddit Thread: https://goo.gl/1TzZXb
+           v1.1 Reddit Thread: https://goo.gl/Vy47wh
+	   v2.0 Reddit Thread: https://goo.gl/x0CGqd
+
+--- Mac OS X
+
+The simplest way to get running.
+
+Step 1: Download, move Desktopia to your Apps folder and run it.
+		(http://desktopia.en.softonic.com/mac/download)
+        
+        (If Mac OS X won't let you run it, do the following:
+        System Preferences > Privacy & Security > Allow apps 
+        downloaded from [anywhere])
+              
+Step 2: Download BitDay in your computer's resolution at www.bitday.me
+
+Step 3: Move the BitDay folder to somewhere you won't need to move, for
+	example your Pictures folder or a Wallpapers folder. Add the
+	'BitDay' images into Desktopia and set the time that you want
+	each one to change.
+
+	I recommend every two hours with Early morning starting at 6
+        but just match this to your routine I guess.
+        
+Step 3: Click 'Enable All'. Make sure app runs on startup. Done :)
+
+
+
+-- Disclaimer
+
+Desktopia is free third party software, not created by me and has nothing to
+do with me, I'm not responsible for any of that shizzle. Enjoy!
+
+(P.S. Thanks to the creators of Desktopia!)

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BitDay - A Beautiful Pixel Wallpaper Set</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46777737-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+/***
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 3000 );
+});
+
+</script>
+  </head>
+  <body>
+    <div id="menubar">
+    	<div id="icon">
+    		<img src="img/icon.png"/>
+    	</div>
+    </div>
+    	<div id="logo">
+    		<img class="center" src="img/logo.png"/>
+    	</div>
+    	<div id="ss-wrapper">
+			<div id="slideshow">
+				<img src="img/slider/BitDay-Mockup-01.png" alt="Slideshow Image 1" class="active" />
+				<img src="img/slider/BitDay-Mockup-02.png" alt="Slideshow Image 2" />
+				<img src="img/slider/BitDay-Mockup-03.png" alt="Slideshow Image 3" />
+				<img src="img/slider/BitDay-Mockup-04.png" alt="Slideshow Image 4" />
+				<img src="img/slider/BitDay-Mockup-05.png" alt="Slideshow Image 5" />
+				<img src="img/slider/BitDay-Mockup-06.png" alt="Slideshow Image 6" />
+				<img src="img/slider/BitDay-Mockup-07.png" alt="Slideshow Image 7" />
+				<img src="img/slider/BitDay-Mockup-08.png" alt="Slideshow Image 8" />
+        <img src="img/slider/BitDay-Mockup-09.png" alt="Slideshow Image 9" />
+        <img src="img/slider/BitDay-Mockup-10.png" alt="Slideshow Image 10" />
+        <img src="img/slider/BitDay-Mockup-11.png" alt="Slideshow Image 11" />
+        <img src="img/slider/BitDay-Mockup-12.png" alt="Slideshow Image 12" />
+			</div>
+    	</div>
+
+    	<div id="wrapper">
+    	<h1>Download</h1><p><b>1.</b> Pick your screen resolution...</p>
+    	<select class="screenres" name="forma" onchange="location = this.options[this.selectedIndex].value;">
+    		<option value="">:)</option>
+			<option value="https://mega.nz/#!mx5iBLTY!5g5j5YtS9UXXJXKRci6319kNIwqIUsaQo5z2eH98-zM" target="_blank">1280x720</option>
+                        <option value="https://mega.nz/#!28pjwaqK!vpVeKUmqNKhWe38G8F4nB8Z7dOOvH5dd3lHMYpU6w2M">1280x800</option
+			<option value="https://mega.nz/#!z94SELyb!m4izADmOWfPC68jzt7umodo83hCSiB3P7IJHOKHv_P0">1366x768</option>
+			<option value="https://mega.nz/#!SogF0SAT!e74qqclKxGRXN-jI1WgwW3NRIc5f2zyTgAcYxLlavuE">1440x900</option>
+			<option value="https://mega.nz/#!ikpUAJDT!iqKMVNIrDakHp_vW9o51HOxxSSYdGykMT4tZ5Lrr1uI">1600x900</option>
+			<option value="https://mega.nz/#!jkgCjRoC!c8-fdHVTFXNhsQjGh8PUj5B0NlC333TmlPkMRqV8nAQ">1680x1050</option>
+			<option value="https://mega.nz/#!L55EHRoJ!kqbzKJUlQtIiZj4QZFl5Gcp7ebu_l2CR-pdL56gthOM">1920x1080</option>
+			<option value="https://mega.nz/#!O04RDKYb!fZQWo2p8FGOiAQxYESuLXW9jUP7DpAkSudaL7TiYeLQ">1920x1200</option>
+			<option value="https://mega.nz/#!a0pwCDSC!9q3wm-nN1yReGUsCrloqxiPAt-ZoG_Sqtqy-6OQHYFI">2560x1440</option>
+			<option value="https://mega.nz/#!y95XwBxL!WTbPusJ1Fd6vj0BW6oFbmtOdHVrfTYrQLqHHc-cFCQc">2560x1600</option>
+			<option value="https://mega.nz/#!yxYgAT4I!-DdaALDfAmog8bB1kNweUNDL3ecd3YqTxz07PuMGmcE">2880x1800</option>
+                        <option value="https://mega.nz/#!L9ADRRzI!RszMOPuLWGEReqFzX_tAzaklU9EZuRCAcj8ddNWXR08">3840x2160</option>
+                        <option value="https://mega.nz/#!eo4wALrB!yDM7coe7umJild5IVE-1spJXL4R2k1bmpVlK55-a7yI">4096x2304</option>
+		</select>
+<p class="info"><a href="http://www.whatismyscreenresolution.com/" target="_blank">Don't know your screen resolution?</a></p>
+<p style="margin-top: 60px; margin-bottom: 60px;">2. Choose your Operating System...</p>
+<a href="http://bitday.me/download/docs/BitDay-v2-Mac-Installation.txt" target="_blank"><img class="os" src="img/osapple.png"/></a>
+<a href="https://mega.nz/#!al5yTAAQ!YhUUowwkHHACH0cumYmUk_LVQbMr0L8iycJMfjCJAFE" target="_blank"><img class="os" src="img/oswindows.png"/><a/>
+<a href="v1.0/docs/Ubuntu-Installation.txt" target="_blank"><img src="img/osubuntu.png"/></a>
+
+<p style="margin-top: 60px; margin-bottom: 20px;">3. Install the Changer...</p>
+<p class="info">Read the included documentation to get your wallpapers changing based on your computers time of day.</p>
+<p style="margin-top: 60px; margin-bottom: 20px;">4. Support BitDay</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="XHEFCKU4VG3KN">
+<input type="image" src="http://i.imgur.com/acdPk5u.png" width="200px" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+<p class="info">A donation will ensure I have enough coffee to work all night!</p>
+</div>
+  </body>
+</html>
