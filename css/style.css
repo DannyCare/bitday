@@ -28,51 +28,51 @@ body {
 }
 
 .bg-0 {
-    background-image: url("/img/sky/10-Sky.png");
+    background-image: url("../img/sky/10-Sky.png");
 }
 
 .bg-1 {
-    background-image: url("/img/sky/01-Sky.png");
+    background-image: url("../img/sky/01-Sky.png");
 }
 
 .bg-2 {
-    background-image: url("/img/sky/02-Sky.png");
+    background-image: url("../img/sky/02-Sky.png");
 }
 
 .bg-3 {
-    background-image: url("/img/sky/03-Sky.png");
+    background-image: url("../img/sky/03-Sky.png");
 }
 
 .bg-4 {
-    background-image: url("/img/sky/04-Sky.png");
+    background-image: url("../img/sky/04-Sky.png");
 }
 
 .bg-5 {
-    background-image: url("/img/sky/04-Sky.png");
+    background-image: url("../img/sky/04-Sky.png");
 }
 
 .bg-6 {
-    background-image: url("/img/sky/04-Sky.png");
+    background-image: url("../img/sky/04-Sky.png");
 }
 
 .bg-7 {
-    background-image: url("/img/sky/07-Sky.png");
+    background-image: url("../img/sky/07-Sky.png");
 }
 
 .bg-8 {
-    background-image: url("/img/sky/08-Sky.png");
+    background-image: url("../img/sky/08-Sky.png");
 }
 
 .bg-9 {
-    background-image: url("/img/sky/09-Sky.png");
+    background-image: url("../img/sky/09-Sky.png");
 }
 
 .bg-10 {
-    background-image: url("/img/sky/10-Sky.png");
+    background-image: url("../img/sky/10-Sky.png");
 }
 
 .bg-11 {
-    background-image: url("/img/sky/11-Sky.png");
+    background-image: url("../img/sky/11-Sky.png");
 }
 
 /* Sun & Moon Axis */
@@ -93,7 +93,7 @@ body {
 }
 .sun {
     position: absolute;
-    background: url('/img/sprites/sun-sprite-glow.png');
+    background: url('../img/sprites/sun-sprite-glow.png');
     background-size: cover;
     top: 0px;
     left: 0px;
@@ -116,7 +116,7 @@ body {
 
 .moon {
     position: absolute;
-    background: url('/img/sprites/moon-sprite-glow.png');
+    background: url('../img/sprites/moon-sprite-glow.png');
     background-size: cover;
     bottom: 0px;
     right: 0px;
@@ -218,51 +218,51 @@ body {
 }
 
 .cloud1-0 {
-    background-image: url("/img/clouds/09-Cloud-01.png");
+    background-image: url("../img/clouds/09-Cloud-01.png");
 }
 
 .cloud1-1 {
-    background-image: url("/img/clouds/01-Cloud-01.png");
+    background-image: url("../img/clouds/01-Cloud-01.png");
 }
 
 .cloud1-2 {
-    background-image: url("/img/clouds/02-Cloud-01.png");
+    background-image: url("../img/clouds/02-Cloud-01.png");
 }
 
 .cloud1-3 {
-    background-image: url("/img/clouds/04-Cloud-01.png");
+    background-image: url("../img/clouds/04-Cloud-01.png");
 }
 
 .cloud1-4 {
-    background-image: url("/img/clouds/04-Cloud-01.png");
+    background-image: url("../img/clouds/04-Cloud-01.png");
 }
 
 .cloud1-5 {
-    background-image: url("/img/clouds/04-Cloud-01.png");
+    background-image: url("../img/clouds/04-Cloud-01.png");
 }
 
 .cloud1-6 {
-    background-image: url("/img/clouds/04-Cloud-01.png");
+    background-image: url("../img/clouds/04-Cloud-01.png");
 }
 
 .cloud1-7 {
-    background-image: url("/img/clouds/07-Cloud-01.png");
+    background-image: url("../img/clouds/07-Cloud-01.png");
 }
 
 .cloud1-8 {
-    background-image: url("/img/clouds/08-Cloud-01.png");
+    background-image: url("../img/clouds/08-Cloud-01.png");
 }
 
 .cloud1-9 {
-    background-image: url("/img/clouds/08-5-Cloud-01.png");
+    background-image: url("../img/clouds/08-5-Cloud-01.png");
 }
 
 .cloud1-10 {
-    background-image: url("/img/clouds/09-Cloud-01.png");
+    background-image: url("../img/clouds/09-Cloud-01.png");
 }
 
 .cloud1-11 {
-    background-image: url("/img/clouds/10-Cloud-01.png");
+    background-image: url("../img/clouds/10-Cloud-01.png");
 }
 
 /* Land Switcher! */
@@ -278,51 +278,51 @@ body {
 }
 
 .land-0 {
-    background-image: url("/img/ground/10-Ground.png");
+    background-image: url("../img/ground/10-Ground.png");
 }
 
 .land-1 {
-    background-image: url("/img/ground/01-Ground.png");
+    background-image: url("../img/ground/01-Ground.png");
 }
 
 .land-2 {
-    background-image: url("/img/ground/02-Ground.png");
+    background-image: url("../img/ground/02-Ground.png");
 }
 
 .land-3 {
-    background-image: url("/img/ground/03-Ground.png");
+    background-image: url("../img/ground/03-Ground.png");
 }
 
 .land-4 {
-    background-image: url("/img/ground/04-Ground.png");
+    background-image: url("../img/ground/04-Ground.png");
 }
 
 .land-5 {
-    background-image: url("/img/ground/04-Ground.png");
+    background-image: url("../img/ground/04-Ground.png");
 }
 
 .land-6 {
-    background-image: url("/img/ground/04-Ground.png");
+    background-image: url("../img/ground/04-Ground.png");
 }
 
 .land-7 {
-    background-image: url("/img/ground/07-Ground.png");
+    background-image: url("../img/ground/07-Ground.png");
 }
 
 .land-8 {
-    background-image: url("/img/ground/08-Ground.png");
+    background-image: url("../img/ground/08-Ground.png");
 }
 
 .land-9 {
-    background-image: url("/img/ground/09-Ground.png");
+    background-image: url("../img/ground/09-Ground.png");
 }
 
 .land-10 {
-    background-image: url("/img/ground/10-Ground.png");
+    background-image: url("../img/ground/10-Ground.png");
 }
 
 .land-11 {
-    background-image: url("/img/ground/11-Ground.png");
+    background-image: url("../img/ground/11-Ground.png");
 }
 
 
@@ -475,7 +475,7 @@ h2 {
     z-index: 999;
 }
 #toggle + label:after {
-    content: url(/img/toolbar/bitday-logo.png);
+    content: url(../img/toolbar/bitday-logo.png);
     opacity: 0.8;
 }
 
@@ -496,7 +496,7 @@ h2 {
 }
 
 #toggle:checked + label:after {
-    content: url(/img/toolbar/menu-close.png);
+    content: url(../img/toolbar/menu-close.png);
 }
 
 

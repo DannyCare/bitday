@@ -3,104 +3,68 @@ var timeBetweenBackgrounds = 7200000; // in milliseconds - change this to 720000
 var d = new Date();
 var hour = d.getHours();
 var minutes = d.getMinutes();
-var bgNumber = getPicture(hour);
+var gdNumber = getPicture(hour);
 
 $(document).ready(function() {
 
   // Determine starting background images:
 
-  if (bgNumber < 11) {
-    var bgNumberNext = bgNumber + 1;
+  if (gdNumber < 11) {
+    var gdNumberNext = gdNumber + 1;
   }
-  if (bgNumber == 11) {
-    var bgNumberNext = 0;
+  if (gdNumber == 11) {
+    var gdNumberNext = 0;
   }
-  
-  $('#backgroundOne').addClass('bg-' + bgNumber);
-  $('#backgroundTwo').addClass('bg-' + bgNumberNext);
-  $('#landOne').addClass('land-' + bgNumber);
-  $('#landTwo').addClass('land-' + bgNumberNext);
-  
+
+  $('#groundOne').addClass('land-' + gdNumber);
+  $('#groundTwo').addClass('land-' + gdNumberNext);
+
   // Get time overshoot (i.e. how far (in percentage) are we in a certain time-block):
   // Every block is 2 hours, so 1 hour into a block would be 50% (0.50)
   // Every minute would be 1/120th of a block (minutes / 60 * 0.50)
-  
+
   var timeovershoot= 0;
-  
+
   // Add 50% to the current block if we're in the second hour of a block (see hour definition on the bottom and adjust this if necessary):
-  
-  if (hour == 0 || hour == 22 || hour == 20 || hour == 18 || hour == 16 || hour == 14 || hour == 12 || hour == 10 || hour == 8 || hour == 6 || hour == 4 || hour == 2){
+
+  if (hour == 0 || hour == 22 || hour== 20 || hour == 18 || hour == 16 || hour == 14 || hour == 12 || hour == 10 || hour == 8 || hour == 6 || hour == 4 || hour == 2){
     timeovershoot= timeovershoot + 0.5;
   }
-  
+
   // Calculate minute overshoot and add this to the time overshoot:
-  
+
   minuteovershoot= (minutes/60)*0.5;
   timeovershoot= timeovershoot + minuteovershoot;
-  
+
   // Calculate time remaining till this block ends (to determine how long to continue fading for):
-  
+
   percentageOfBlockDone= timeovershoot;
   percentageOfBlockRemaining= 1-percentageOfBlockDone;
   secondsInBlockRemaining= timeBetweenBackgrounds * percentageOfBlockRemaining;
-  
-  console.log('CURRENT TIME IS: ' + hour + ':' + minutes + '. STARTING BACKGROUNDS ARE: bg-' + bgNumber + ' (opacity ' + percentageOfBlockRemaining.toFixed(2) + ', fading OUT); bg-' + bgNumberNext + ' (opacity ' + percentageOfBlockDone.toFixed(2) + ', fading IN).')
-  
+
+  console.log('CURRENT TIME IS: ' + hour + ':' + minutes + '. STARTING BACKGROUNDS ARE: land-' + gdNumber + ' (opacity ' + percentageOfBlockRemaining.toFixed(2) + ', fading OUT); land-' + gdNumberNext + ' (opacity ' + percentageOfBlockDone.toFixed(2) + ', fading IN).')
+
   // Set opacity values adjusted to percentage of current block that has elapsed:
   // We're fading div ONE out, so this will have an opacity of the percentage still remaining in this block,
   // and we're fading div TWO in, so this will have an opacity of percentage done in this block.
-  
-  function staticBackground () {
-    if (percentageOfBlockDone > 1) {
-      $('#backgroundOne').css('opacity') = 1;
-      $('#landOne').css('opacity') = 1;
 
-      $('#backgroundOne');
-      $('#landOne');
-     
-
-    }
-  
-    else {
-      $('#backgroundOne').css('opacity',percentageOfBlockRemaining);
-      $('#landOne').css('opacity',percentageOfBlockRemaining);
-      
-      
-      $('#backgroundOne').fadeTo(secondsInBlockRemaining, 0);
-      $('#landOne').fadeTo(secondsInBlockRemaining, 0);
-
-
-    }
-  }
-
-  staticBackground
- 
-  
-  $('#backgroundTwo').css('opacity',percentageOfBlockDone);
-  $('#landTwo').css('opacity',percentageOfBlockDone);
+  $('#groundOne').css('opacity',percentageOfBlockRemaining);
+  $('#groundTwo').css('opacity',percentageOfBlockDone);
 
   // Adjust fade timers and start fading:
-  
-  
-  $('#backgroundTwo').fadeTo(secondsInBlockRemaining, 1, function(){
-  
-  	// Once we're done finishing fading the time block that we started in, continue like normal:
-  
-  	 window.setInterval(setBackground, timeBetweenBackgrounds);
-     
-  });
 
-  $('#landTwo').fadeTo(secondsInBlockRemaining, 1, function(){
+  $('#groundOne').fadeTo(secondsInBlockRemaining, 0);
+  $('#groundTwo').fadeTo(secondsInBlockRemaining, 1, function(){
 
     // Once we're done finishing fading the time block that we started in, continue like normal:
 
     window.setInterval(setBackground, timeBetweenBackgrounds);
 
-});
+  });
 
 });
 
-var activeBackground = bgNumber;
+var activeBackground = gdNumber;
 var activeDiv = 1;
 
 function setBackground() {
@@ -114,8 +78,8 @@ function setBackground() {
       var nextBackground = 0;
     }
     console.log('Current background = ' + activeBackground + '. Next background = ' + nextBackground + '. Fading out container One. Fading in container Two.');
-    $('#backgroundTwo').attr('class', 'bg').addClass('bg-' + nextBackground).fadeIn(timeBetweenBackgrounds);
-    $('#backgroundOne').fadeOut((timeBetweenBackgrounds - 500), function() {
+    $('#groundTwo').attr('class', 'bg').addClass('land-' + nextBackground).fadeIn(timeBetweenBackgrounds);
+    $('#groundOne').fadeOut((timeBetweenBackgrounds - 500), function() {
       activeBackground = nextBackground;
       activeDiv = 2;
     });
@@ -130,8 +94,8 @@ function setBackground() {
       var nextBackground = 0;
     }
     console.log('Current background = ' + activeBackground + '. Next background = ' + nextBackground + '. Fading out container Two. Fading in container One.');
-    $('#backgroundOne').attr('class', 'bg').addClass('bg-' + nextBackground).fadeIn(timeBetweenBackgrounds);
-    $('#backgroundTwo').fadeOut((timeBetweenBackgrounds - 500), function() {
+    $('#groundOne').attr('class', 'land').addClass('land-' + nextBackground).fadeIn(timeBetweenBackgrounds);
+    $('#groundTwo').fadeOut((timeBetweenBackgrounds - 500), function() {
       activeBackground = nextBackground;
       activeDiv = 1;
     });

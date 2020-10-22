@@ -1,0 +1,46 @@
+      ____    ______  ______  ____    ______   __    __ 
+     /\  _`\ /\__  _\/\__  _\/\  _`\ /\  _  \ /\ \  /\ \
+     \ \ \L\ \/_/\ \/\/_/\ \/\ \ \/\ \ \ \L\ \\ `\`\\/'/
+      \ \  _ <' \ \ \   \ \ \ \ \ \ \ \ \  __ \`\ `\ /' 
+       \ \ \L\ \ \_\ \__ \ \ \ \ \ \_\ \ \ \/\ \ `\ \ \ 
+        \ \____/ /\_____\ \ \_\ \ \____/\ \_\ \_\  \ \_\
+         \/___/  \/_____/  \/_/  \/___/  \/_/\/_/   \/_/
+   
+                         Version 1.0 :-)
+                         
+                          www.bitday.me
+                         
+                  Compiled by BloodyMarvellous
+                www.reddit.com/u/BloodyMarvellous
+
+					www.reddit.com/r/BitDay
+
+           Original Reddit Thread: http://goo.gl/1TzZXb
+           Newer Reddit Thread: http://goo.gl/Vy47wh
+
+--- Ubuntu/Linux
+
+/u/OhMrBigshot made a script that will install it with no interference
+on your end. You can browse to the URL yourself and see what the script
+does. It downloads the zip, extracts it, and runs install.sh inside.
+
+Option 1: Make your directory and cd to it, then run this line inside:
+
+          wget -O - http://chen.asraf.me/rotating_wallpaper.sh | bash
+
+          This will automatically download the images & scripts, extract
+          them and add to crontab & suspension resume.
+
+IMPORTANT!
+It's unsafe to trust me and run that above script without checking out
+the contents first.
+
+Option 2: The smarter thing to do is to download the zip itself, with
+          this command:
+
+          wget http://chen.asraf.me/RotatingWallpapers.tar.gz
+          
+          Which has all that stuff inside (images & 3 scripts), and see
+          what the scripts do for yourself.
+
+Changelog: http://goo.gl/Hz4MCZ
